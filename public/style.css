@@ -1,0 +1,127 @@
+ *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background:#293133 ;
+    font-family: "Edu TAS beginner", sans-serif;
+}
+.todo-container{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width:600px;
+    padding: 20px;
+    transform: translate(-50%,-50%);
+    background:rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo{
+    width: 400px;
+}
+h2{
+    padding: 10px;
+    font-size: 3rem;
+}
+input{
+    font-family: "Edu TAS beginner", sans-serif; 
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+textarea{
+    font-family: "Edu TAS beginner", sans-serif;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+.todo-header button{
+    color: red;
+    border:none;
+    cursor: pointer;
+    margin: 15px 5px 5px 5px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    font-family: "Edu TAS beginner", sans-serif;
+}
+ul{
+    list-style: none;
+}
+.todo-list-item{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+
+}
+.todo-list-item-content {
+    font-size: .9rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.todo-list-item form{
+    width: 100%;
+    display: flex;
+}
+.todo-list-item input{
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 45px;
+}
+.todo-list-item .confirm{
+    color:red;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: black;
+    margin-left: 5px;
+    max-height: 30px;
+    font-family: "Edu TAS beginner", sans-serif; 
+    display: block;
+    margin-top: 50px;
+}
+.todo-list-item .cancel{
+    color:black;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: red;
+    margin-left: 5px;
+    max-height: 30px;
+    font-family: "Edu TAS beginner", sans-serif; 
+    display: block;
+    margin-top: 50px;
+}
+.todo-list-item div{
+    flex-grow: calc(2);
+}
+.todo-list-item .edit{
+    color: #1C1C1C ;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: auto;
+}
+.todo-list-item .remove{
+    color: red;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
