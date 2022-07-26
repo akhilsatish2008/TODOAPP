@@ -78,7 +78,7 @@ app
         })
     })   
 
-
+    console.log("Database_URL", process.env.DB_CONNECTION);
 
 //Start Server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
