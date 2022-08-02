@@ -69,7 +69,7 @@ app
     });
 //dELETE 
 app
-    .route("/remove/:id") 
+    .route("/remove/:id") // creating a route for remove button
     .get((req,res)=>{
         const id = req.params.id
         TodoTask.findByIdAndRemove(id, err => {
@@ -81,4 +81,4 @@ app
     console.log("Database_URL", process.env.DB_CONNECTION);
 
 //Start Server
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // where to listen to for the server
